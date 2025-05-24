@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root styles */
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Logo (Top Left "PopX") Gradient Animation */
+.logo {
+  @apply text-transparent bg-clip-text bg-gradient-purple bg-[length:200%_200%] animate-gradient;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Create account heading - "PopX" inside it */
+.heading-popx {
+  @apply text-transparent bg-clip-text bg-gradient-purple bg-[length:200%_200%] animate-gradient font-extrabold;
+}
+
+/* Background animation container (optional if using <BackgroundAnimation />) */
+.animated-gradient-bg {
+  background: linear-gradient(270deg, #667eea, #764ba2, #6b8dd6, #b993d6);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* FadeIn animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out both;
+}
+.animate-fadeIn.delay-200 {
+  animation-delay: 0.2s;
+}
+.animate-fadeIn.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Gradient text animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure background blends in dark mode */
+.dark .animated-gradient-bg {
+  background: linear-gradient(270deg, #1f1b2e, #2a1738, #1c1c30, #2e1f47);
+}
+
+/* Additional adjustments (optional) */
+.text-label {
+  @apply text-sm font-semibold text-left text-gray-700 dark:text-gray-300 mb-2;
+}
