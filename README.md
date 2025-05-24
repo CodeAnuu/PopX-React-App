@@ -1,12 +1,49 @@
-# React + Vite
+# 📱 Educase React.js Internship Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a submission for the React.js internship at Educase. It is a web-based replica of a mobile app interface, built using React with Vite, styled with Tailwind CSS, and deployed on Vercel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Project Links
 
-## Expanding the ESLint configuration
+- 🚀 Live Site: https://popx-react-app.vercel.app/ 
+- 📁 Source Code: [GitHub Repository](https://github.com/CodeAnuu/PopX-React-App)
+- 🎨 Design Prototype: [Adobe XD Reference](https://xd.adobe.com/view/b68eea25-003d-4a5d-8fdd-d463eeb20b32-e3dd)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Highlights
+
+- 🎯 UI implementation closely follows the provided Adobe XD design
+- 📲 Optimized for mobile viewing with a centered and responsive layout
+- 🌐 Smooth page transitions using React Router
+- ⚡ Superfast development experience powered by Vite
+- 🎨 Utilizes Tailwind CSS for consistent and scalable styling
+
+---
+
+## ⚙️ Tech Stack Overview
+
+| Tool        | Role                             |
+|-------------|----------------------------------|
+| React       | Frontend library                 |
+| Vite        | Lightning-fast build tool        |
+| Tailwind CSS| Utility-first CSS framework      |
+| React Router| Client-side routing              |
+| Render      | Deployment and hosting platform  |
+
+---
+
+## 🚀 Getting Started Locally
+
+Follow these steps to run the project on your local machine:
+
+# Step 1: Clone the repository
+git clone https://github.com/CodeAnuu/PopX-React-App.git
+cd frontend
+
+# Step 2: Install project dependencies
+npm install
+
+# Step 3: Start the development server
+npm run dev
